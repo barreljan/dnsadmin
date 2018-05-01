@@ -8,10 +8,10 @@ efficient. It does what it has to do.
 
 
 ### Future fixes:
-* PTR
 * Entry value validations
 * Adding domains
 * Deleting domains
+* MX records (not sure why)
 * ?
  
 The system works as following. There is a web and mysql server available for the pages and the domain 

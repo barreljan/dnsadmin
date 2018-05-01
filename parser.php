@@ -3,8 +3,6 @@
  * Parser by bartjan@is.nl, Dec 2017
  * Written for output to be used by dnsmasq
  *
- * Note: only forward dns entries
- * Reverse/PTR not possible yet...
  */
 
 $cfg    = array();
