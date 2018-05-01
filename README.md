@@ -1,7 +1,8 @@
 # DNS Admin
 DNSmasq admin page for simple local domains.
 
-![alt text](https://https://raw.githubusercontent.com/barreljan/dnsadmin/master/dns_admin.png "Screenie")
+![alt text](https://github.com/barreljan/dnsadmin/raw/master/dns_admin.png "Screenie")
+!
 
 Manage your local domain entries with a simple but effective GUI. Add A/AAAA or different records.
 For a small home enviroment with some dev systems, .local TLD's etc it is super lightweight and
