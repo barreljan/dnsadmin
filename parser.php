@@ -35,10 +35,15 @@ if ($change == "1") {
 	foreach (get_available_zones() as $zone) {
 		$_zone	= $zone['zonename'];
 		foreach (get_available_records($_zone) as $record) {
-			$_hostname	= $record['hostname'];
-			$_value		= $record['recordvalue'];
+			$record['recordtype']   = strtoupper($record['recordtype']);
+			$_hostname              = $record['hostname'];
+			$_value                 = $record['recordvalue'];
 
-			$data .= sprintf("address=/%s.%s/%s\n",$_hostname,$_zone,$_value);
+			if ($record['recordtype'] == "PTR" ) {
+				$data .= sprintf("ptr-record=%s.%s,%s\n",$_hostname,$_zone,$_value);
+			} elseif ($record['recordtype'] == "A" || $record['recordtype'] == "AAAA") {
+				$data .= sprintf("address=/%s.%s/%s\n",$_hostname,$_zone,$_value);
+			}
 		}
 	}
 	file_put_contents($cfg['outputfile'], $data);
