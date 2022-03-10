@@ -6,10 +6,10 @@
 $cfg    = array();
 $cfg['mysql_hostname']	= 'localhost';
 $cfg['mysql_username']	= 'dnsadmin';
-$cfg['mysql_password']	= '5G1Zkft52HDYyddbRpQl';
+$cfg['mysql_password']	= '<sup3rsecrEt!>';
 $cfg['mysql_database']	= 'dnsadmin';
-$cfg['mail_to']	 	= 'bartjan@pc-mania.nl';
-$cfg['mail_from']	= 'dnsadmin@pc-mania.nl';
+$cfg['mail_to']	 	= 'johndoe@domain.tld';
+$cfg['mail_from']	= 'noreply@domain.tld';
 $cfg['debug']		= 0;
 $cfg['dry_run']		= 0;
 
